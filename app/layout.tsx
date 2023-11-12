@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Courier_Prime } from "next/font/google";
+import { Open_Sans, Courier_Prime } from "next/font/google";
 import "./globals.css";
 
-const CourierPrime = Courier_Prime({ subsets: ["latin"], weight: "400" });
+const OpenSans = Open_Sans({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={CourierPrime.className}>{children}</body>
+    <html lang="pt-br">
+      <body className={`${OpenSans.className} bg-zinc-800`}>{children}</body>
     </html>
   );
 }
